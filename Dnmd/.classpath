@@ -4,5 +4,6 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="com.bjsxt"/>
 	<classpathentry kind="src" path="com.shuzu"/>
+	<classpathentry kind="src" path="MyGeme0.1"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
