@@ -5,5 +5,7 @@ public class Demo01 extends Object {
 		String sl = "12";
 		System.out.println("1");
 		System.out.println(sl);
+//		System.out.printl
+//		String s 
 	}
 }
