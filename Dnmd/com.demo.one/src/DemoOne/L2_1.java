@@ -15,5 +15,6 @@ public class L2_1 {
 			e.printStackTrace();
 		}
 		System.out.println("程序继续运行");
+		System.out.println("XIUG");
 	}
 }
