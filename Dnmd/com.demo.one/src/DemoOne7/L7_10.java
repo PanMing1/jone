@@ -6,6 +6,7 @@ public class L7_10 {
 	public static void main(String[] args) {
 		ObjectOutputStream o = null;
 		ObjectInputStream p = null;
+		PrintStream r = null;
 		Aaa aaa = new Aaa("知止而后有定", 108, 89.9f);
 		Aaa bbb = null;
 		try {
@@ -18,15 +19,21 @@ public class L7_10 {
 			bbb = (Aaa) p.readObject();
 			// readObject() 用于读取数据，并且进行数据转换
 			System.out.println(bbb.q + "----------" + bbb.w + "----------" + bbb.e);
+			r = new PrintStream("D:/PanMing/home/c.txt");
+			System.setOut(r);
+			System.out.println(bbb.q + "----------" + bbb.w + "----------" + bbb.e);
+			System.out.println(bbb.q + "----------" + bbb.w + "----------" + bbb.e);
 		} catch (Exception e) {
 			e.printStackTrace();
-		} finally {
+		} finally { //善后，保证文件能正常关闭
 			try {
 				o.close();
 				p.close();
 				System.exit(-1);
+				//关闭文件退出程序
 			} catch (Exception e2) {
 				System.exit(-1);
+				//文件关闭失败，照样退出程序
 			}
 		}
 	}
