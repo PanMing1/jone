@@ -37,3 +37,9 @@ class Wdmb extends JPanel{
 //		super.paint(g);
 	}
 }
+/*
+ * paint方法会在以下三种方式调用
+ * 1、启动程序时
+ * 2、窗口大小发生变化时
+ * 3、运行repaint函数时
+ */
