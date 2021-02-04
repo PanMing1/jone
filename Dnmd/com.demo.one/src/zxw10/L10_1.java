@@ -7,8 +7,11 @@ public class L10_1 {
 		Connection ct = null;
 		Statement sm = null;
 		try {
-			Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
-			ct = DriverManager.getConnection("jdbc:odbc:sql server", "sa", "root");
+//			Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
+//			ct = DriverManager.getConnection("jdbc:odbc:sql server", "sa", "root");
+			Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+			String aa = "jdbc:sqlserver://192.168.136.1:1433;DatabaseName=shugou;integratedSecurity=false;";
+			ct = DriverManager.getConnection(aa, "sa", "root");
 			sm = ct.createStatement();
 
 			ResultSet rs = sm.executeQuery("select * from renwu");
