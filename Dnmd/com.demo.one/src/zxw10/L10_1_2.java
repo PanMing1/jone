@@ -2,7 +2,7 @@ package zxw10;
 
 import java.sql.*;
 
-public class L10_1 {
+public class L10_1_2 {
 	public static void main(String[] args) {
 		Connection ct = null;
 		Statement sm = null;
@@ -13,7 +13,7 @@ public class L10_1 {
 			String aa = "jdbc:sqlserver://127.0.0.1:1433;DatabaseName=shugou;integratedSecurity=false;";
 			ct = DriverManager.getConnection(aa, "sa", "root");
 			sm = ct.createStatement();
-
+			int i = sm.executeUpdate("INSERT INTO dbo.renwu VALUES (6,'aa','a','ccc',10,500)");
 			ResultSet rs = sm.executeQuery("select * from renwu");
 
 			while (rs.next()) {
