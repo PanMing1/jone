@@ -19,5 +19,6 @@ public class Test02_09_01 {
 		System.out.println(stu1.getName()+"---------"+stu1.getAge());
 		System.out.println(stu2.getName()+"---------"+stu2.getAge());
 		System.out.println(stu3.getName()+"---------"+stu3.getAge());
+		System.out.println(stu3.getName()+"---------"+stu3.getAge());
 	}
 }
