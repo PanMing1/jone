@@ -1,8 +1,8 @@
-package com.unit2.test;
+package com.unit02.test;
 
 import java.util.Date;
 
-public class Test2_2_01 {
+public class Test02_02_01 {
 	public static void main(String[] args) {
 		Date d1 = new Date();
 		System.out.println(d1);

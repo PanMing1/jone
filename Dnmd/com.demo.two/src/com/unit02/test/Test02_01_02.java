@@ -1,8 +1,8 @@
-package com.unit2.test;
+package com.unit02.test;
 
 import java.util.logging.Logger;
 
-public class Test2_1_02 {
+public class Test02_01_02 {
 	public static void main(String[] args) { 
 		System.out.println("¿ªÊ¼");
 		long a = System.currentTimeMillis();
