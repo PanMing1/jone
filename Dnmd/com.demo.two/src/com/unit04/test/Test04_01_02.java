@@ -1,7 +1,5 @@
 package com.unit04.test;
 
-import java.util.ArrayList;
-import java.util.Random;
 
 public class Test04_01_02 {
 	public static void main(String[] args) {
